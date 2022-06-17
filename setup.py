@@ -1,3 +1,6 @@
+from distutils.core import setup, Extension
+
+# Extension 안에 argument로 output파일 이름과, 우리들의 c 파일을 넣어주면 된다. 
 example_module = Extension('_example',
                            sources=['example_wrap.c', 'example.c'],
                            )
